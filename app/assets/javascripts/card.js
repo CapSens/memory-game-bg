@@ -18,6 +18,7 @@ function addCard(value) {
   const cardContainer = document.querySelector('.cards-container');
   const newCard = document.createElement('button');
   newCard.dataset.action = "click->cards#flip"
+  newCard.dataset.value = value;
   newCard.type = 'button';
   newCard.classList.add('flip-card');
   newCard.innerHTML = `
