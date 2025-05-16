@@ -1,4 +1,9 @@
 <div class="game-container" data-controller="cards">
-  <div class="cards-container">
+  <form action="/" data-action="submit->cards#createGame">
+    <label for="cardsCountInput">Nombre de cartes :</label>
+    <input type="number" id="cardsCountInput" data-cards-target="cardsCountInput" min="1" max="13">
+    <input type="submit" value="Subscribe!" />
+  </form>
+  <div class="cards-container" data-cards-target="cardsContainer">
   </div>
 </div>
